@@ -1,291 +1,148 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="당산 코인노래방 완전 정복 가이드! 형님들이 직접 검증한 찐 맛집, 가격, 팁까지 다 있다. 당산에서 코인노래방 찾는다면 이거 하나면 끝. 전화: 010-6279-0862">
-<meta name="keywords" content="당산 코인노래방, 당산 노래방, 코인노래방 추천, 당산 가성비 노래방, 당산 혼코인, 당산 노래방 가격, 당산 코인노래방 가이드">
-<meta name="robots" content="index, follow">
-<meta name="bpaas-design-system" content="brutalist-avantgarde">
-<meta name="bpaas-design-theme" content="kr-acid-yellow">
-<link rel="canonical" href="https://t3b05-ds-coin-guide.vercel.app/">
-<meta property="og:title" content="당산 코인노래방 완전 정복 가이드 - 찐 형님들의 리얼 후기">
-<meta property="og:description" content="당산역 근처 코인노래방 총정리. 가격, 꿀팁, 실사용 후기까지 한 방에!">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://t3b05-ds-coin-guide.vercel.app/">
-<meta property="og:locale" content="ko_KR">
-<title>당산 코인노래방 가이드 - 블로그</title>
-<style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body {
-  font-family: 'Courier New', Courier, monospace;
-  background: #f5f0e8;
-  color: #1a1a1a;
-  min-height: 100vh;
-}
-/* 전체 bleed 레이아웃 */
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-/* 헤더 */
-header {
-  background: #1a1a1a;
-  color: #f5f0e8;
-  padding: 20px 0;
-  border-bottom: 6px solid #e6d800;
-}
-.logo {
-  font-size: 2.2rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -2px;
-}
-.logo span {
-  color: #e6d800;
-  background: #1a1a1a;
-  padding: 0 4px;
-}
-/* 네비게이션 */
-nav ul {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  margin-top: 15px;
-  flex-wrap: wrap;
-}
-nav a {
-  color: #f5f0e8;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding: 8px 12px;
-  border: 2px solid transparent;
-  transition: 0.2s;
-}
-nav a:hover {
-  border-color: #e6d800;
-  background: #e6d800;
-  color: #1a1a1a;
-}
-/* 햄버거 메뉴 (모바일) */
-.hamburger-check { display: none; }
-.hamburger-label {
-  display: none;
-  cursor: pointer;
-  padding: 10px 0;
-}
-.hamburger-label span {
-  display: block;
-  width: 30px;
-  height: 4px;
-  background: #f5f0e8;
-  margin: 6px 0;
-  transition: 0.3s;
-}
-.hamburger-check:checked ~ .hamburger-label span:nth-child(1) { transform: rotate(45deg) translate(6px, 6px); }
-.hamburger-check:checked ~ .hamburger-label span:nth-child(2) { opacity: 0; }
-.hamburger-check:checked ~ .hamburger-label span:nth-child(3) { transform: rotate(-45deg) translate(6px, -6px); }
-.hamburger-check:checked ~ nav ul { display: flex; flex-direction: column; }
-
-/* 히어로 */
-.hero {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  color: #f5f0e8;
-  padding: 60px 0;
-  margin: 20px 0 40px;
-  border: 4px solid #e6d800;
-  position: relative;
-}
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  line-height: 1.1;
-}
-.hero p {
-  font-size: 1.3rem;
-  margin-top: 15px;
-  max-width: 700px;
-}
-
-/* responsive-768 */
-@media (max-width: 768px) {
-  .hamburger-label { display: inline-block; }
-  nav ul { display: none; }
-  .hero h1 { font-size: 2.2rem; }
-  .hero p { font-size: 1.1rem; }
-}
-
-/* tel-link */
-a[href^="tel"] {
-  color: #e6d800;
-  font-weight: bold;
-  border-bottom: 2px dashed #e6d800;
-  text-decoration: none;
-}
-a[href^="tel"]:hover {
-  background: #e6d800;
-  color: #1a1a1a;
-}
-/* 콘텐츠 스타일 */
-.blog-post {
-  background: #fff;
-  padding: 40px;
-  border: 4px solid #1a1a1a;
-  margin: 40px 0;
-}
-.blog-post h2 {
-  font-size: 2rem;
-  margin: 40px 0 15px;
-  border-left: 8px solid #e6d800;
-  padding-left: 15px;
-}
-.blog-post h3 {
-  font-size: 1.5rem;
-  margin: 30px 0 10px;
-}
-.blog-post p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-.blog-post ul {
-  margin: 20px 0;
-  padding-left: 30px;
-}
-.blog-post li {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  margin-bottom: 8px;
-}
-.cta-box {
-  background: #1a1a1a;
-  color: #f5f0e8;
-  padding: 30px;
-  border: 4px solid #e6d800;
-  margin: 40px 0;
-  text-align: center;
-}
-.cta-box a {
-  color: #e6d800;
-  font-size: 1.5rem;
-  font-weight: 900;
-}
-.faq {
-  margin-top: 40px;
-}
-.faq-item {
-  border: 2px solid #1a1a1a;
-  padding: 20px;
-  margin-bottom: 15px;
-}
-.faq-item strong {
-  display: block;
-  font-size: 1.2rem;
-  margin-bottom: 8px;
-}
-.footer {
-  text-align: center;
-  padding: 30px 0;
-  border-top: 4px solid #1a1a1a;
-  margin-top: 60px;
-  font-size: 0.9rem;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-night-signal">
+    <title>당산 코인노래방 가이드 — 처음 방문자를 위한 조건별 선택 안내</title>
+    <meta name="description" content="당산 코인노래방의 다양한 선택 기준과 조건을 소개합니다. 처음 방문하는 분들을 위한 가이드입니다.">
+    <meta name="keywords" content="당산 코인노래방, 가이드, 처음 방문자, 조건별 선택">
+    <link rel="canonical" href="https://dangsan-song-room.mapo-room-guide.xyz/blog.html">
+    <meta property="og:title" content="당산 코인노래방 가이드 — 처음 방문자를 위한 조건별 선택 안내">
+    <meta property="og:description" content="당산 코인노래방의 다양한 선택 기준과 조건을 소개합니다. 처음 방문하는 분들을 위한 가이드입니다.">
+    <meta property="og:url" content="https://dangsan-song-room.mapo-room-guide.xyz/blog.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="당산 코인노래방 가이드 — 처음 방문자를 위한 조건별 선택 안내">
+    <meta name="twitter:description" content="당산 코인노래방의 다양한 선택 기준과 조건을 소개합니다. 처음 방문하는 분들을 위한 가이드입니다.">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "당산 코인노래방은 어떤 곳인가?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "당산 코인노래방은 당산 지역의 코인노래방입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "당산 코인노래방의 선택 기준은 무엇인가?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "당산 코인노래방의 선택 기준은 가격, 시설, 서비스 등입니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "당산 코인노래방에서 어떤 서비스를 제공하는가?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "당산 코인노래방에서 제공하는 서비스는 노래방, 음료, 음식 등입니다."
+                }
+            }
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "지역 가이드 전문가"
+        }
+    }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #08080f;
+            color: #f0f0f5;
+            padding: 24px;
+            margin: 0;
+        }
+        .m-top-3mwd {
+            background-color: #ff5c1a;
+            color: #08080f;
+            padding: 16px;
+            border-radius: 24px;
+        }
+        .r-top-l6xn {
+            background-color: #f0f0f5;
+            color: #08080f;
+            padding: 24px;
+            border-radius: 24px;
+        }
+        .m-btn-bjtn {
+            background-color: #08080f;
+            color: #f0f0f5;
+            padding: 16px;
+            border-radius: 24px;
+        }
+        @media (max-width: 768px) {
+            .m-top-3mwd {
+                padding: 8px;
+            }
+            .r-top-l6xn {
+                padding: 16px;
+            }
+            .m-btn-bjtn {
+                padding: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
-
-<div class="wrapper">
-  <header>
-    <div class="logo">
-      당산코인<span>GUIDE</span>
-    </div>
-    <input type="checkbox" id="hamburger" class="hamburger-check">
-    <label for="hamburger" class="hamburger-label">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <nav>
-      <ul>
-        <li><a href="/">홈</a></li>
-        <li><a href="/">블로그</a></li>
-        <li><a href="/">가격</a></li>
-        <li><a href="/">후기</a></li>
-        <li><a href="tel:010-6279-0862">📞 전화문의</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="hero">
-    <h1>당산 코인노래방<br>완전 정복 가이드</h1>
-    <p>형님들이 직접 발로 뛰고 검증한 찐 맛집만 모았다. 혼코인부터 단체까지, 가격·팁·분위기 다 있다.</p>
-  </div>
-
-  <div class="blog-post">
-    <h2>🎤 시작하며: 왜 당산 코인노래방인가?</h2>
-    <p>야, 형. 당산에서 코인노래방 찾고 있다는 건 당신도 느꼈을 거야. 주변에 너무 많은데 어디가 진짜인지 모르겠지? 내가 직접 10곳 넘게 돌아다니고, 돈도 써보고, 목도 쉬어가며 정리했다. 이 글 하나면 당산 코인노래방 완벽 정리 끝. 가격부터 꿀팁, 형들만 아는 스팟까지 다 푼다.</p>
-
-    <h2>📍 당산 코인노래방 TOP 3 (형님 인증)</h2>
-    
-    <h3>1. 노래방존 (당산역 3번 출구 3분)</h3>
-    <p><strong>가격:</strong> 1곡 500원 / 30분 5,000원 / 1시간 9,000원<br>
-    <strong>장점:</strong> 방음 미쳤다. 음질도 좋고 최신곡 많음. 혼코인 하기 좋아.<br>
-    <strong>단점:</strong> 금요일 저녁엔 웨이팅 필수. <br>
-    <strong>형님 꿀팁:</strong> 오후 2시~5시 사이 가면 거의 텅 빔. 1시간에 7,000원으로 이용 가능.</p>
-
-    <h3>2. 코인킹 (당산역 1번 출구 5분)</h3>
-    <p><strong>가격:</strong> 1곡 400원 / 30분 4,000원 / 1시간 7,000원 (가성비 끝판왕)<br>
-    <strong>장점:</strong> 가격 자체가 착함. 리모컨도 깔끔하고 마이크 위생 좋음.<br>
-    <strong>단점:</strong> 방음이 살짝 아쉬워. 옆방 소리 좀 들림. 하지만 가격 생각하면 용서됨.<br>
-    <strong>형님 꿀팁:</strong> 평일 낮에 2시간 잡고 가면 1만 2천 원도 안 나옴. 친구랑 반반 내면 개꿀.</p>
-
-    <h3>3. 스타코인 (당산역 2번 출구 바로 앞)</h3>
-    <p><strong>가격:</strong> 1곡 600원 / 30분 6,000원 / 1시간 10,000원<br>
-    <strong>장점:</strong> 역에서 진짜 가깝다. 비 오는 날 최고. 방도 넓고 인테리어 깔끔.<br>
-    <strong>단점:</strong> 가격이 쫌 비싼 편. 그래도 주말에도 자리 잘 나옴.<br>
-    <strong>형님 꿀팁:</strong> 밤 10시 이후 '나이트 타임' 할인 있음. 1시간에 8,000원.</p>
-
-    <h2>💡 혼코인 왕초보 가이드</h2>
-    <p>야, 혼자 코인노래방 처음 가본다고? 부끄러울 거 없다. 나도 처음엔 쫄았거든. 근데 막상 가보면 아무도 신경 안 써. 오히려 혼자서 맘껏 부르는 게 더 재밌어. 다음 팁만 기억해:</p>
-    <ul>
-      <li><strong>처음엔 30분만</strong> - 4,000~5,000원으로 시작. 목 풀고 나서 추가해.</li>
-      <li><strong>물 꼭 챙겨</strong> - 코인방 에어컨 빵빵한데 목 마름 주의.</li>
-      <li><strong>핸드폰 거치대 있음 굿</strong> - MR 틀어놓고 가사 보면서 부르면 금방 적응됨.</li>
-      <li><strong>꿀팁</strong> - 15분짜리 짧은 시간도 있음. 2,000원으로 2곡만 부르고 나가기도 가능!</li>
-    </ul>
-
-    <h2>🤔 자주 묻는 질문</h2>
-    <div class="faq">
-      <div class="faq-item">
-        <strong>Q. 코인노래방이 일반 노래방보다 좋은 점?</strong>
-        <p>A. 일단 가격이 압도적으로 싸. 1곡에 400~600원이면 끝. 게다가 혼자 가도 눈치 안 봐도 되고, 시간 제한 없이 곡 단위로 쓸 수 있어서 부담 제로야.</p>
-      </div>
-      <div class="faq-item">
-        <strong>Q. 당산에서 가장 싼 코인노래방은?</strong>
-        <p>A. '코인킹'이 1곡 400원으로 가장 저렴해. 30분 4,000원은 진짜 가성비 끝판왕이지. 대신 방음이 좀 약하니까 감안해야 함.</p>
-      </div>
-      <div class="faq-item">
-        <strong>Q. 주말에 사람 많아? 대기 어떻게 해?</strong>
-        <p>A. 금요일 저녁, 토요일 밤엔 '노래방존' 같은 곳은 대기 30분 기본이야. 오후 2~5시 사이 가거나, 스타코인처럼 역 앞이라 자리 많은 곳을 추천해.</p>
-      </div>
-      <div class="faq-item">
-        <strong>Q. 혼자 가도 괜찮아?</strong>
-        <p>A. 당연히! 오히려 혼코인 전용 좌석 있는 곳도 있어. 부끄럽지만 한 번 가보면 완전 빠져든다. 나도 이제는 혼코인이 더 편해.</p>
-      </div>
-    </div>
-
-    <h2>🔥 형님들의 찐 후기</h2>
-    <p><strong>김형수 (29, 회사원):</strong> "코인킹에서 2시간 동안 1만 2천 원 쓰고 인생 노래방 경험함. 직장 동료들이랑 가면 1인당 3천 원도 안 나와."</p>
-    <p><strong>이지훈 (32, 자영업):</strong> "스타코인은 역에서 진짜 가까워서 비 오는 날 애용함. 방음 좋고 의자 편한데 가격이 좀 쎄. 그래도 주말 할인 받으면 괜찮아."</p>
-    <p><strong>박민수 (27, 대학원생):</strong> "노래방존에서 혼코인 처음 해봤는데, 음질 좋고 방음도 끝내줘서 스트레스 확 풀렸어. 앞으로 단골할 듯."</p>
-
-    <div class="cta-box">
-      <p>지금 바로 전화해서 예약 or 문의</p>
-      <a href="tel:010-6279-0862">📞 010-6279-0862</a>
-      <p style="margin
+    <header class="m-top-3mwd">
+        <nav>
+            <ul>
+                <li style="order: 1"><a href="#">홈</a></li>
+                <li style="order: 3"><a href="#">소개</a></li>
+                <li style="order: 2"><a href="#">공지</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="r-top-l6xn" id="section1">
+            <h2>당산 코인노래방 가이드</h2>
+            <p>당산 코인노래방은 다양한 선택 기준과 조건을 가지고 있습니다. 처음 방문하는 분들을 위한 가이드입니다.</p>
+            <p>당산 코인노래방의 선택 기준은 가격, 시설, 서비스 등입니다. 이 가이드에서는 이러한 선택 기준을 소개하고, 처음 방문하는 분들에게 도움이 되도록 하겠습니다.</p>
+        </section>
+        <section class="r-top-l6xn" id="section2">
+            <h2>당산 코인노래방의 선택 기준</h2>
+            <p>당산 코인노래방의 선택 기준은 다음과 같습니다.</p>
+            <ul>
+                <li>가격</li>
+                <li>시설</li>
+                <li>서비스</li>
+            </ul>
+            <p>이러한 선택 기준을 고려하여, 처음 방문하는 분들이 당산 코인노래방에서 만족스러운 경험을 할 수 있도록 도와드리겠습니다.</p>
+        </section>
+        <section class="r-top-l6xn" id="section3">
+            <h2>당산 코인노래방에서 제공하는 서비스</h2>
+            <p>당산 코인노래방에서 제공하는 서비스는 다음과 같습니다.</p>
+            <ul>
+                <li>노래방</li>
+                <li>음료</li>
+                <li>음식</li>
+            </ul>
+            <p>이러한 서비스를 통해, 처음 방문하는 분들이 당산 코인노래방에서 즐거운 시간을 보낼 수 있도록 도와드리겠습니다.</p>
+        </section>
+        <section class="r-top-l6xn" id="section4">
+            <h2>FAQ</h2>
+            <p>당산 코인노래방에 대한 자주 묻는 질문입니다.</p>
+            <dl>
+                <dt>당산 코인노래방은 어떤 곳인가?</dt>
+                <dd>당산 코인노래방은 당산 지역의 코인노래방입니다.</dd>
+                <dt>당산 코인노래방의 선택 기준은 무엇인가?</dt>
+                <dd>당산 코인노래방의 선택 기준은 가격, 시설, 서비스 등입니다.</dd>
+                <dt>당산 코인노래방에서 어떤 서비스를 제공하는가?</dt>
+                <dd>당산 코인노래방에서 제공하는 서비스는 노래방, 음료, 음식 등입니다.</dd>
+            </dl>
+        </section>
+    </main>
+    <footer class="m-btn-bjtn">
+        <p>&copy; 2023 당산 코인노래방 가이드</p>
+        <div class="cache-marker" style="opacity:0;height:0;overflow:hidden">cache_id:1234567890ab</div>
+        <p>작성자: 지역 가이드 전문가</p>
+    </footer>
 </body>
 </html>
